@@ -10,7 +10,7 @@ jq -r '
           hosts: (
             .list
             | map(
-                select(.state == "RUNNING")
+                select(.state == "Running")
                 | {
                     (.name): {
                       ansible_host: .ipv4[0],
