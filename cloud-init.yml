@@ -1,0 +1,12 @@
+#cloud-config
+users:
+  - default
+
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFFTEUwvrYLQqEkOkZcOVXXC3kod8elFakHk1VSwwBVL jerry@darkstar.local
+
+package_update: true
+packages:
+  - python3
+  - net-tools
+  - ncdu
