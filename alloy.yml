@@ -1,0 +1,4 @@
+- name: Manage Alloy
+  hosts: all
+  roles:
+    - grafana.grafana.alloy
