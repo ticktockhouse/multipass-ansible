@@ -1,0 +1,6 @@
+- name: Manage Alloy
+  hosts: all
+  tasks:
+    - name: Say hello
+      ansible.builtin.debug:
+        msg: "Hello World from {{ inventory_hostname }}"
