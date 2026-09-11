@@ -1,4 +1,4 @@
-- name: Manage Alloy
+- name: Name of play
   hosts: all
   tasks:
     - name: Say hello
