@@ -1,0 +1,6 @@
+- name: Name of play
+  hosts: all
+  tasks:
+    - name: Say hello
+      ansible.builtin.debug:
+        msg: "{{ default_message }}"

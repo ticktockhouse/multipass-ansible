@@ -1,0 +1,1 @@
+default_message: "Hello World from {{ inventory_hostname }}"
