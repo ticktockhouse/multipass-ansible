@@ -3,4 +3,4 @@
   tasks:
     - name: Say hello
       ansible.builtin.debug:
-        msg: "Hello World from {{ inventory_hostname }}"
+        msg: "{{ default_message }}"
