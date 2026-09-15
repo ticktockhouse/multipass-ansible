@@ -8,9 +8,11 @@
   },
   "vms": [
     {
-      "name": "web-01",
+      "name": "ansible-test",
       "groups": ["web"],
-      "cloud_init": "cloud-init/web-01.yaml"
+      "memory": "2G",
+      "disk": "12G",
+      "cloud_init": "cloud-init/cloud-init.yaml"
     },
     {
       "name": "monitoring-01",
