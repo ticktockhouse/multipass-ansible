@@ -1,0 +1,28 @@
+{
+  "defaults": {
+    "image": "lts",
+    "cpus": 2,
+    "memory": "2G",
+    "disk": "12G",
+    "bridged": false
+  },
+  "vms": [
+    {
+      "name": "ansible-test",
+      "groups": ["web"],
+      "memory": "2G",
+      "disk": "12G",
+      "cloud_init": "cloud-init/cloud-init.yml"
+    },
+    {
+      "name": "monitoring-01",
+      "image": "noble",
+      "cpus": 4,
+      "memory": "4G",
+      "disk": "30G",
+      "bridged": true,
+      "groups": ["monitoring"],
+      "cloud_init": "cloud-init/monitoring-01.yml"
+    }
+  ]
+}

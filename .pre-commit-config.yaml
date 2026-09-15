@@ -18,7 +18,8 @@ repos:
     rev: v26.4.0
     hooks:
       - id: ansible-lint
-        files: \.(yaml|yml)$
+        files: ^ansible/.*\.(yaml|yml)$
         name: Ansible Lint
         description: Run configurations on .ansible-lint file
         verbose: true
+        always_run: false
