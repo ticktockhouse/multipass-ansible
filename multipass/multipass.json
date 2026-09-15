@@ -1,0 +1,33 @@
+{
+  "defaults": {
+    "image": "lts",
+    "cpus": 2,
+    "memory": "2G",
+    "disk": "12G",
+    "bridged": false
+  },
+  "vms": [
+    {
+      "name": "web-01",
+      "groups": ["web"],
+      "cloud_init": "cloud-init/web-01.yaml"
+    },
+    {
+      "name": "monitoring-01",
+      "cpus": 4,
+      "memory": "4G",
+      "disk": "30G",
+      "bridged": true,
+      "groups": ["monitoring"],
+      "cloud_init": "cloud-init/monitoring-01.yaml"
+    },
+    {
+      "name": "debian-test",
+      "image": "debian",
+      "cpus": 2,
+      "memory": "2G",
+      "disk": "10G",
+      "groups": ["test"]
+    }
+  ]
+}
