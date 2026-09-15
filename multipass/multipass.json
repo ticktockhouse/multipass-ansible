@@ -16,20 +16,13 @@
     },
     {
       "name": "monitoring-01",
+      "image": "noble",
       "cpus": 4,
       "memory": "4G",
       "disk": "30G",
       "bridged": true,
       "groups": ["monitoring"],
       "cloud_init": "cloud-init/monitoring-01.yml"
-    },
-    {
-      "name": "debian-test",
-      "image": "debian",
-      "cpus": 2,
-      "memory": "2G",
-      "disk": "10G",
-      "groups": ["test"]
     }
   ]
 }
