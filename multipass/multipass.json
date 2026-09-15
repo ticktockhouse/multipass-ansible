@@ -12,7 +12,7 @@
       "groups": ["web"],
       "memory": "2G",
       "disk": "12G",
-      "cloud_init": "cloud-init/cloud-init.yaml"
+      "cloud_init": "cloud-init/cloud-init.yml"
     },
     {
       "name": "monitoring-01",
@@ -21,7 +21,7 @@
       "disk": "30G",
       "bridged": true,
       "groups": ["monitoring"],
-      "cloud_init": "cloud-init/monitoring-01.yaml"
+      "cloud_init": "cloud-init/monitoring-01.yml"
     },
     {
       "name": "debian-test",
